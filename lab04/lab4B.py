@@ -1,4 +1,3 @@
-
 from pwn import *
 
 s = ssh(host = '192.168.147.134', user = 'lab4B', password = 'bu7_1t_w4sn7_brUt3_f0rc34b1e!')
